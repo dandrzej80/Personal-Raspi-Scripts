@@ -1,8 +1,11 @@
 #!/bin/bash -e
 #General Setup Script For Raspian Install
 
+#Run raspi-config
+sudo raspi-config
+
 #Enable SSH/VNC
-echo "" > /boot/ssh
+sudo echo "" > /boot/ssh
 
 #Enable Boot To Console
 
@@ -14,9 +17,6 @@ sudo apt-get -y upgrade
 sudo rpi-update
 
 #Customize File System
-
-#Run raspi-config
-sudo raspi-config
 
 #Reboot Pi
 sudo shutdown -r
