@@ -11,7 +11,7 @@ sudo raspi-config
 
 #Edit Crontab File
 #Auto Reboot Nightly
-
+sudo ed -s /etc/crontab $'-1 r edit-crontab\nw\nq\n'
 
 #Update/Upgrade Raspian
 sudo apt-get update
@@ -23,5 +23,5 @@ sudo rpi-update
 #Customize File System
 
 #Reboot Pi
-sudo shutdown -r
+sudo shutdown -r now
 
