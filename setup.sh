@@ -5,9 +5,13 @@
 sudo raspi-config
 
 #Enable SSH/VNC
-sudo echo "" > /boot/ssh
+#sudo echo "" > /boot/ssh
 
 #Enable Boot To Console
+
+#Edit Crontab File
+#Auto Reboot Nightly
+
 
 #Update/Upgrade Raspian
 sudo apt-get update
