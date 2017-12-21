@@ -9,11 +9,15 @@ sudo apt-get -y upgrade
 sudo rpi-update
 
 #Run raspi-config
-sudo raspi-config
+#sudo raspi-config
 
 #Enable SSH/VNC
 #sudo echo "" > /boot/ssh
 sudo apt-get install tightvncserver -y
+vncserver #-1234 -1234 -n
+mv tightvncserver /etc/init.d
+sudo chmod 755 /etc/init.d/tightvncserver
+sudo update-rc.d tightvncserver defaults
 
 #Install Github
 #sudo apt-get install git
