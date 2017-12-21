@@ -13,7 +13,7 @@ sudo raspi-config
 
 #Enable SSH/VNC
 #sudo echo "" > /boot/ssh
-sudo install tightvncserver
+sudo apt-get install tightvncserver -y
 
 #Install Github
 #sudo apt-get install git
