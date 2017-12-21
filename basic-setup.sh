@@ -16,7 +16,7 @@ sudo raspi-config
 sudo install tightvncserver
 
 #Install Github
-sudo apt-get install git
+#sudo apt-get install git
 
 #Enable Boot To Console
 
