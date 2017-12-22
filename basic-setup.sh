@@ -26,7 +26,8 @@ sudo update-rc.d tightvncserver defaults
 
 #Edit Crontab File
 #Auto Reboot Nightly
-sudo ed -s /etc/crontab $'-1 r edit-crontab\nw\nq\n'
+cd
+sudo ed -s /etc/crontab <<< $'$-1 r ./Raspi-Scripts/edit-crontab\nw\nq\n'
 
 #Customize File System
 
